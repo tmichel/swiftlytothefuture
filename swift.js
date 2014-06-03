@@ -46,6 +46,12 @@
 
         setText();
         document.getElementById('btnNext').addEventListener('click', setText);
+        document.getElementById('btnTweet').addEventListener('click', function () {
+            var text = document.getElementsByClassName('banner')[0].innerText;
+            var url = 'https://twitter.com/share?url=http%3A%2F%2Fswiftlytothefuture.com&text=' + text + '&hashtags=swiftlang';
+            window.open(url, '_blank');
+        });
+
 
         function rand(upper, omit) {
             var num = Math.floor(Math.random() * upper);
