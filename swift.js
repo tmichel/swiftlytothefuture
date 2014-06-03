@@ -33,10 +33,7 @@
         lastIn = 0,
         lastBs = 0;
 
-        innSpan.innerText = innovationList[lastIn];
-        bsSpan.innerText = bullshitList[lastBs];
-
-        document.getElementById('btnNext').addEventListener('click', function () {
+        function setText() {
             var newIn = rand(innovationList.length, lastIn),
                 newBs = rand(bullshitList.length, lastBs);
 
@@ -45,7 +42,10 @@
 
             lastIn = newIn;
             lastBs = newBs;
-        });
+        }
+
+        setText();
+        document.getElementById('btnNext').addEventListener('click', setText);
 
         function rand(upper, omit) {
             var num = Math.floor(Math.random() * upper);
