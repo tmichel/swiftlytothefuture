@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    height: 100px;
+    width: 1000px;
+}
+
+#inner-container {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    height: 120px;
+}
+
+p.banner {
+    font-size: 40px;
+}
+
+p.banner span {
+    color: rgb(51, 160, 129);
+}
+
+p.inspire {
+    float: right;
+}
+
+footer {
+    font-size: 0.75em;
+    margin-top: 40px;
+}
+
+a {
+    color: rgb(51, 160, 129);
+}
+
+a:visited {
+    color: rgb(160, 51, 51);
+}
+
+#twitter-box {
+    margin-top: 10px;
+}
+
+/********** button **********/
+.next-button {
+    font-size:16px;
+    font-weight:normal;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    border:1px solid #eeb44f;
+    padding:9px 18px;
+    text-decoration:none;
+    background:-moz-linear-gradient( center top, #ffce79 5%, #eeaf41 100% );
+    background:-ms-linear-gradient( top, #ffce79 5%, #eeaf41 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffce79', endColorstr='#eeaf41');
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #ffce79), color-stop(100%, #eeaf41) );
+    background-color:#ffce79;
+    color:#ffffff;
+    display:inline-block;
+    text-shadow:1px 1px 0px #ce8e28;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #fceaca;
+    -moz-box-shadow:inset 1px 1px 0px 0px #fceaca;
+}
+
+.next-button:hover {
+    background:-moz-linear-gradient( center top, #eeaf41 5%, #ffce79 100% );
+    background:-ms-linear-gradient( top, #eeaf41 5%, #ffce79 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeaf41', endColorstr='#ffce79');
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #eeaf41), color-stop(100%, #ffce79) );
+}
+
+.next-button:active {
+    position:relative;
+    top:1px;
+}
